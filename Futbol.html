@@ -1,107 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Argentino - AFA</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="contenedor-wiki">
-    <header>
-    <h1>
-        Futbol Argentino
-    </h1>
-    </header>
-    <aside>
-        <h2>Indice:</h2>
-    <ul>
-        <li>
-            <a href="#h">Historia</a>
-        </li>
-        <li>
-            <a href="#e">Estadios</a>
-        </li>
-        <li>
-            <a href="#hc">Hinchadas</a>
-        </li>
-        <li>
-            <a href="#c">Clasicos</a>
-        </li>
-        <li>
-            <a href="#r">Referencias</a>
-        </li>
-    </ul>
-    </aside>
-    <main>
-        <h1>AFA</h1>
-    <img src="imagenes\AFA.webp" alt="Foto AFA" height="452" width="404">
-    <h2 id="h">
-        Historia
-    </h2>
-    <p>
-        El fútbol en Argentina es el deporte más popular del país. Es el que tiene más jugadores federados (900 000 en 2019), y el más practicado por la población masculina y femenina en forma recreativa, desde la niñez, en la que alcanza a la casi totalidad, hasta más allá de los sesenta años.[1] Asimismo, nueve de cada diez habitantes declaran ser simpatizantes de algún equipo de fútbol.[2] En el habla popular del país, también se suele utilizar las expresiones «fúbol», «fulbo» o «chuti» (esta última en el noroeste) para designarlo.[3][4][5] También resulta muy común utilizar la expresión «jugar a la pelota», en referencia a la práctica del fútbol.[6][7][8][9] El estilo de juego aplicado tradicionalmente por los futbolistas argentinos es denominado «fútbol de potrero», enmarcado dentro del «fútbol sudamericano», de carácter individual improvisado.[10] El 22 de junio se celebra el Día del Futbolista Argentino, mientras que el 21 de agosto se celebra el Día de las Futbolistas Argentinas.[11]
+        <header>
+            <h1>
+                Futbol Argentino
+            </h1>
+        </header>
+        <aside>
+            <h2>Indice:</h2>
+            <ul id="indice"></ul>
+            <h2>Apariencia:</h2>
+            <button type="button" id="botonModo">Modo oscuro</button>
+            <div id="tamanoTexto">
+                <button type="button" id="botonPequeno" class="boton-tamano">Pequeño</button>
+                <button type="button" id="botonEstandar" class="boton-tamano activo">Estándar</button>
+                <button type="button" id="botonGrande" class="boton-tamano">Grande</button>
+            </div>
+        </aside>
+        <main>
+            <h1>AFA</h1>
+            <img src="imagenes/AFA.webp" alt="Foto AFA" height="452" width="404">
+            <section>
+                <h2 id="h">
+                    Historia
+                </h2>
+                <p>
+                    El fútbol en Argentina es el deporte más popular del país. Es el que tiene más jugadores federados (900 000 en 2019), y el más practicado por la población masculina y femenina en forma recreativa, desde la niñez, en la que alcanza a la casi totalidad, hasta más allá de los sesenta años. Asimismo, nueve de cada diez habitantes declaran ser simpatizantes de algún equipo de fútbol. En el habla popular del país, también se suele utilizar las expresiones «fúbol», «fulbo» o «chuti» (esta última en el noroeste) para designarlo. También resulta muy común utilizar la expresión «jugar a la pelota», en referencia a la práctica del fútbol. El estilo de juego aplicado tradicionalmente por los futbolistas argentinos es denominado «fútbol de potrero», enmarcado dentro del «fútbol sudamericano», de carácter individual improvisado. El 22 de junio se celebra el Día del Futbolista Argentino, mientras que el 21 de agosto se celebra el Día de las Futbolistas Argentinas.
 
-La Asociación del Fútbol Argentino, fundada en 1893 es la más antigua de sus pares de Sudamérica y la octava del mundo. El fútbol de este país no sólo fue el pionero de América en organizarse, sino que en 1912 se convirtió también en el primero del continente en afiliarse a la FIFA, el ente rector de este deporte a nivel universal.
+                    La Asociación del Fútbol Argentino, fundada en 1893 es la más antigua de sus pares de Sudamérica y la octava del mundo. El fútbol de este país no sólo fue el pionero de América en organizarse, sino que en 1912 se convirtió también en el primero del continente en afiliarse a la FIFA, el ente rector de este deporte a nivel universal.
 
-El torneo de liga, jugado anualmente de manera ininterrumpida desde 1893 —aunque en 1891 ya se había disputado el primer torneo de liga en el país—, es uno de los más antiguos del mundo, detrás de las ligas británica y neerlandesa.[n 1] La Selección masculina de fútbol de Argentina es uno de los ocho combinados nacionales que obtuvieron la Copa Mundial de Fútbol, habiéndola ganado en Argentina 1978, México 1986 y Catar 2022, además de haber alcanzado el subcampeonato en Uruguay 1930, Italia 1990 y Brasil 2014. Obtuvo también dos medallas olímpicas de oro, en Atenas 2004 y Beijing 2008, y dos medallas de plata, en Ámsterdam 1928 y Atlanta 1996. Obtuvo dieciséis veces la Copa América, en la que salió catorce veces subcampeón; ganó una vez la Copa FIFA Confederaciones en 1992, en la cual obtuvo dos veces el subcampeonato (1995 y 2005). A estos logros hay que adicionar tres títulos Interconfederativos oficiales: el Campeonato Panamericano de Fútbol en 1960 (siendo subcampeón de dicho certamen en 1956), y la Copa de Campeones Conmebol-UEFA (anteriormente llamada Copa Artemio Franchi) en 1993 y 2022 (siendo el seleccionado con más títulos de la competición). A nivel de selecciones mayores es la que más copas oficiales ha ganado, con veintitrés títulos.[13]
+                    El torneo de liga, jugado anualmente de manera ininterrumpida desde 1893 —aunque en 1891 ya se había disputado el primer torneo de liga en el país—, es uno de los más antiguos del mundo, detrás de las ligas británica y neerlandesa. La Selección masculina de fútbol de Argentina es uno de los ocho combinados nacionales que obtuvieron la Copa Mundial de Fútbol, habiéndola ganado en Argentina 1978, México 1986 y Catar 2022, además de haber alcanzado el subcampeonato en Uruguay 1930, Italia 1990 y Brasil 2014. Obtuvo también dos medallas olímpicas de oro, en Atenas 2004 y Beijing 2008, y dos medallas de plata, en Ámsterdam 1928 y Atlanta 1996. Obtuvo dieciséis veces la Copa América, en la que salió catorce veces subcampeón; ganó una vez la Copa FIFA Confederaciones en 1992, en la cual obtuvo dos veces el subcampeonato (1995 y 2005). A estos logros hay que adicionar tres títulos Interconfederativos oficiales: el Campeonato Panamericano de Fútbol en 1960 (siendo subcampeón de dicho certamen en 1956), y la Copa de Campeones Conmebol-UEFA (anteriormente llamada Copa Artemio Franchi) en 1993 y 2022 (siendo el seleccionado con más títulos de la competición). A nivel de selecciones mayores es la que más copas oficiales ha ganado, con veintitrés títulos.
 
-A nivel juveniles, obtuvo seis veces la Copa Mundial de Fútbol Sub-20, en la que además fue subcampeón en dos ocasiones. También ganó el Campeonato Sudamericano Sub-20 en cinco oportunidades, el Campeonato Sudamericano Sub-17 en cuatro ediciones, el Campeonato Sudamericano Sub-15 en una ocasión, el Torneo Preolímpico Sudamericano Sub-23 en cinco oportunidades y el torneo de fútbol en los Juegos Sudamericanos en dos ocasiones. En adición, lidera el torneo de fútbol en los Juegos Panamericanos, donde totaliza siete medallas de oro y dos de plata.
+                    A nivel juveniles, obtuvo seis veces la Copa Mundial de Fútbol Sub-20, en la que además fue subcampeón en dos ocasiones. También ganó el Campeonato Sudamericano Sub-20 en cinco oportunidades, el Campeonato Sudamericano Sub-17 en cuatro ediciones, el Campeonato Sudamericano Sub-15 en una ocasión, el Torneo Preolímpico Sudamericano Sub-23 en cinco oportunidades y el torneo de fútbol en los Juegos Sudamericanos en dos ocasiones. En adición, lidera el torneo de fútbol en los Juegos Panamericanos, donde totaliza siete medallas de oro y dos de plata.
 
-Los clubes del fútbol argentino son los que han logrado mayor cantidad de títulos internacionales en el mundo (79), siendo los que más veces obtuvieron la Copa Intercontinental (9) y la Copa Libertadores (25). Sumando los éxitos deportivos de las selecciones nacionales (55) y los logros oficiales de los clubes a nivel internacional, el fútbol argentino masculino es, con 134 torneos oficiales, uno de los más laureados del mundo.[14]
+                    Los clubes del fútbol argentino son los que han logrado mayor cantidad de títulos internacionales en el mundo (79), siendo los que más veces obtuvieron la Copa Intercontinental (9) y la Copa Libertadores (25). Sumando los éxitos deportivos de las selecciones nacionales (55) y los logros oficiales de los clubes a nivel internacional, el fútbol argentino masculino es, con 134 torneos oficiales, uno de los más laureados del mundo.
 
-En fútbol femenino, la AFA organiza la Primera División Femenina desde 1991 y es una actividad profesional desde el 16 de marzo de 2019. La Selección femenina de fútbol de Argentina obtuvo sus mejores resultados al coronarse Campeón en el Campeonato Sudamericano Femenino de 2006,[15] y obtener el cuarto lugar en la Copa Mundial Femenina de Fútbol de 1971.
+                    En fútbol femenino, la AFA organiza la Primera División Femenina desde 1991 y es una actividad profesional desde el 16 de marzo de 2019. La Selección femenina de fútbol de Argentina obtuvo sus mejores resultados al coronarse Campeón en el Campeonato Sudamericano Femenino de 2006, y obtener el cuarto lugar en la Copa Mundial Femenina de Fútbol de 1971.
 
-En la Argentina también se practica de modo muy difundido el futsal. Los logros más importantes de la Selección Argentina de Futsal son: en la AMF, dos Campeonatos Mundiales en 1994 y 2019 y el subcampeonato en 2007, y en la categoría C-20, el Campeonato Mundial de 2014[16] y el subcampeonato en 2018;[17] en la FIFA, la obtención de la Copa Mundial de Futsal 2016, los subcampeonatos de 2021 y 2024, el cuarto lugar en el 2004, la Copa Confederaciones de Futsal de 2014 y tres Campeonatos de la Copa América de Futsal en 2003, 2015 y 2022. En categoría femenina obtuvo los subcampeonatos de la Copa América Femenina de Futsal en 2011 y 2019 y el subcampeonato en el Campeonato Mundial Femenino de Futsal de la AMF de 2017.[18]
+                    En la Argentina también se practica de modo muy difundido el futsal. Los logros más importantes de la Selección Argentina de Futsal son: en la AMF, dos Campeonatos Mundiales en 1994 y 2019 y el subcampeonato en 2007, y en la categoría C-20, el Campeonato Mundial de 2014 y el subcampeonato en 2018; en la FIFA, la obtención de la Copa Mundial de Futsal 2016, los subcampeonatos de 2021 y 2024, el cuarto lugar en el 2004, la Copa Confederaciones de Futsal de 2014 y tres Campeonatos de la Copa América de Futsal en 2003, 2015 y 2022. En categoría femenina obtuvo los subcampeonatos de la Copa América Femenina de Futsal en 2011 y 2019 y el subcampeonato en el Campeonato Mundial Femenino de Futsal de la AMF de 2017.
 
-Dentro de la variedad del futsal, Argentina se destaca en la modalidad de fútbol para no videntes. La selección nacional masculina, llamada Los Murciélagos, ha obtenido dos veces el Campeonato Mundial (2002 y 2006), tres veces la Copa América (1999, 2005 y 2017), la Medalla de Oro en los Juegos Mundiales para Ciegos de Seúl 2015,[19] dos veces la Medalla de Plata en los Juegos Paralímpicos de 2004 y Juegos Paralímpicos de 2020,[20] y dos veces la Medalla de Bronce en los Juegos Paralímpicos de 2008 y Juegos Paralímpicos de 2016. La selección nacional femenina, llamada Las Murciélagas, se consagró campeona mundial en el Primer Campeonato Mundial de Futbol para Ciegas realizado en los Juegos Mundiales IBSA 2023.[21]
+                    Dentro de la variedad del futsal, Argentina se destaca en la modalidad de fútbol para no videntes. La selección nacional masculina, llamada Los Murciélagos, ha obtenido dos veces el Campeonato Mundial (2002 y 2006), tres veces la Copa América (1999, 2005 y 2017), la Medalla de Oro en los Juegos Mundiales para Ciegos de Seúl 2015, dos veces la Medalla de Plata en los Juegos Paralímpicos de 2004 y Juegos Paralímpicos de 2020, y dos veces la Medalla de Bronce en los Juegos Paralímpicos de 2008 y Juegos Paralímpicos de 2016. La selección nacional femenina, llamada Las Murciélagas, se consagró campeona mundial en el Primer Campeonato Mundial de Futbol para Ciegas realizado en los Juegos Mundiales IBSA 2023.
 
-Finalmente, en el país se practica también el fútbol de playa. Argentina fue una de las cuatro participantes, con Brasil, Estados Unidos e Italia, que organizaron la primera competencia internacional en Miami en 1993. Participó en todos los Campeonatos Mundiales no oficiales organizados desde 1995, obteniendo su mejor posición en 2001, cuando terminó clasificada en el tercer lugar.[22] En el Campeonato de Fútbol Playa de Conmebol ganó el torneo en 2013, obteniendo el subcampeonato en 2008 y en 2011.
+                    Finalmente, en el país se practica también el fútbol de playa. Argentina fue una de las cuatro participantes, con Brasil, Estados Unidos e Italia, que organizaron la primera competencia internacional en Miami en 1993. Participó en todos los Campeonatos Mundiales no oficiales organizados desde 1995, obteniendo su mejor posición en 2001, cuando terminó clasificada en el tercer lugar. En el Campeonato de Fútbol Playa de Conmebol ganó el torneo en 2013, obteniendo el subcampeonato en 2008 y en 2011.
 
-Desde el punto de vista de los elementos de juego, en Argentina se inventó en 1931, en la ciudad de Bell Ville, Provincia de Córdoba, la pelota de fútbol moderna, sin tiento, conocida originalmente con el nombre de superball.[23
-    </p>
-    <h2 id="e">
-        Estadios
-    </h2>
-    <p>
-        Como consecuencia directa de la afición masiva al fútbol de la población argentina, existen gran cantidad de estadios en todo el país, casi exclusivamente diseñados para la práctica del fútbol. Buenos Aires, que ha sido denominada la ciudad de los estadios,[114] posee en sus 202 km²[115] una numerosa cantidad de estadios, entre los que se encuentran los de River Plate (el más grande del país con una capacidad de 85.018 espectadores), Boca Juniors, Vélez Sarsfield, Huracán, San Lorenzo de Almagro, Argentinos Juniors, Ferro Carril Oeste, Nueva Chicago, Atlanta, Deportivo Español y All Boys entre otros, a los que deben adicionarse los de Racing, Independiente, Los Andes, Deportivo Moron, Banfield, Temperley, Lanús, Quilmes y Arsenal de Sarandí entre los muchos que se encuentran en el Gran Buenos Aires. En la ciudad y sus alrededores existen además, estadios de menor tamaño como los de Excursionistas, Defensores de Belgrano, Comunicaciones, General Lamadrid, Barracas Central, Deportivo Riestra y Sacachispas.
+                    Desde el punto de vista de los elementos de juego, en Argentina se inventó en 1931, en la ciudad de Bell Ville, Provincia de Córdoba, la pelota de fútbol moderna, sin tiento, conocida originalmente con el nombre de superball.[23
+                </p>
+            </section>
+            <section>
+                <h2 id="e">
+                    Estadios
+                </h2>
+                <p>
+                    Como consecuencia directa de la afición masiva al fútbol de la población argentina, existen gran cantidad de estadios en todo el país, casi exclusivamente diseñados para la práctica del fútbol. Buenos Aires, que ha sido denominada la ciudad de los estadios, posee en sus 202 km² una numerosa cantidad de estadios, entre los que se encuentran los de River Plate (el más grande del país con una capacidad de 85.018 espectadores), Boca Juniors, Vélez Sarsfield, Huracán, San Lorenzo de Almagro, Argentinos Juniors, Ferro Carril Oeste, Nueva Chicago, Atlanta, Deportivo Español y All Boys entre otros, a los que deben adicionarse los de Racing, Independiente, Los Andes, Deportivo Moron, Banfield, Temperley, Lanús, Quilmes y Arsenal de Sarandí entre los muchos que se encuentran en el Gran Buenos Aires. En la ciudad y sus alrededores existen además, estadios de menor tamaño como los de Excursionistas, Defensores de Belgrano, Comunicaciones, General Lamadrid, Barracas Central, Deportivo Riestra y Sacachispas.
 
-Otros importantes estadios de fútbol en el país son el Estadio Mundialista Mario Alberto Kempes (ex Chateau Carreras) con capacidad para 57.000 espectadores en Córdoba, el Estadio Ciudad de La Plata con capacidad para 53.000 espectadores (40.000 sentadas), los de Newell's Old Boys (42.000 espectadores) y Rosario Central (42.000 espectadores) en Rosario, los de Colón (40.000 espectadores) y Unión (26.000 espectadores) en Santa Fe, el Estadio José Fierro (35.200 espectadores) y Estadio La Ciudadela (28.000 espectadores) en Tucumán, el Estadio Mundialista José María Minella de Mar del Plata, el Estadio Juan Domingo Perón (Instituto de Córdoba), el Estadio Padre Ernesto Martearena de Salta, el Estadio Mundialista Malvinas Argentinas de Mendoza, el Estadio Único Madre de Ciudades de Santiago del Estero y el Estadio San Juan del Bicentenario de San Juan, todos ellos con capacidad para más de 25.000 espectadores.
-    </p>
-    <h2 id="hc">
-        Hinchada
-    </h2>
-    <p>
-        Las palabras "hincha" e "hinchada", utilizada generalizadamente en español para definir a los simpatizantes activos y ruidosos de un club de fútbol, aparecieron en el Río de la Plata a comienzos del siglo XX. Su origen proviene de los fuertes gritos de apoyo a su equipo, el Nacional de Montevideo, que daba Prudencio Miguel Reyes, un talabartero uruguayo, cuya tarea era hinchar “a puro pulmón” la pelota del club, es decir, “el hincha pelotas” o simplemente “el hincha” del club. El término pasó a designar a quienes expresaban ruidosamente su apoyo al club, imponiéndose en el habla rioplatense, para extenderse luego al resto de los países de habla hispana, y también a otros deportes.[126][127]
+                    Otros importantes estadios de fútbol en el país son el Estadio Mundialista Mario Alberto Kempes (ex Chateau Carreras) con capacidad para 57.000 espectadores en Córdoba, el Estadio Ciudad de La Plata con capacidad para 53.000 espectadores (40.000 sentadas), los de Newell's Old Boys (42.000 espectadores) y Rosario Central (42.000 espectadores) en Rosario, los de Colón (40.000 espectadores) y Unión (26.000 espectadores) en Santa Fe, el Estadio José Fierro (35.200 espectadores) y Estadio La Ciudadela (28.000 espectadores) en Tucumán, el Estadio Mundialista José María Minella de Mar del Plata, el Estadio Juan Domingo Perón (Instituto de Córdoba), el Estadio Padre Ernesto Martearena de Salta, el Estadio Mundialista Malvinas Argentinas de Mendoza, el Estadio Único Madre de Ciudades de Santiago del Estero y el Estadio San Juan del Bicentenario de San Juan, todos ellos con capacidad para más de 25.000 espectadores.
+                </p>
+            </section>
+            <section>
+                <h2 id="hc">
+                    Hinchada
+                </h2>
+                <p>
+                    Las palabras "hincha" e "hinchada", utilizada generalizadamente en español para definir a los simpatizantes activos y ruidosos de un club de fútbol, aparecieron en el Río de la Plata a comienzos del siglo XX. Su origen proviene de los fuertes gritos de apoyo a su equipo, el Nacional de Montevideo, que daba Prudencio Miguel Reyes, un talabartero uruguayo, cuya tarea era hinchar “a puro pulmón” la pelota del club, es decir, “el hincha pelotas” o simplemente “el hincha” del club. El término pasó a designar a quienes expresaban ruidosamente su apoyo al club, imponiéndose en el habla rioplatense, para extenderse luego al resto de los países de habla hispana, y también a otros deportes.
 
-La conducta de los espectadores de "hinchar" en los encuentros deportivos contrastaba con las normas del fair play que intentaban imponer los clubes y escuelas de origen británico, que cuestionaban como antideportivas la exteriorización de las pasiones en el deporte y como consecuencia de ello las manifestaciones exageradas de apoyo a uno de los contrincantes, así como toda manifestación de rechazo.
+                    La conducta de los espectadores de "hinchar" en los encuentros deportivos contrastaba con las normas del fair play que intentaban imponer los clubes y escuelas de origen británico, que cuestionaban como antideportivas la exteriorización de las pasiones en el deporte y como consecuencia de ello las manifestaciones exageradas de apoyo a uno de los contrincantes, así como toda manifestación de rechazo.
 
-Debido al enorme proceso inmigratorio que afectaba a las sociedades rioplatenses a principios del siglo XX, el fútbol y particularmente la adopción desde niño de un club por el cual hinchar se constituyó en uno de los elementos decisivos de homogeneización cultural de la población.[128][129]
+                    Debido al enorme proceso inmigratorio que afectaba a las sociedades rioplatenses a principios del siglo XX, el fútbol y particularmente la adopción desde niño de un club por el cual hinchar se constituyó en uno de los elementos decisivos de homogeneización cultural de la población.
 
-Durante años se han realizado diferentes encuestas para determinar qué cantidad estimada de simpatizantes poseen los clubes del fútbol argentino. Si bien los datos no son definitivos, y suelen arrojar diversos matices, muestran una considerable ventaja de los denominados Cinco grandes y de los clubes rosarinos por sobre el resto.
-La hinchada mas popular del pais la tiene el Club Atletico River Plate, gracias a su pasion y al estadio de gran capacidad que posee.
-    </p>
-    <h2 id="c">
-        Claiscos
-    </h2>
-    <p>
-        En el fútbol argentino hay muchos clásicos y partidos de gran rivalidad, los cuales se pueden dividir en clásicos «históricos» y clásicos «modernos». Se consideran modernos a los clásicos en los que los equipos comenzaron a rivalizar cuando al menos uno de ellos ya rivalizaba anteriormente con otro club con el cual se consideraban mutuamente máximos rivales, por lo que es su clásico original (histórico). En algunos casos toma fuerza la nueva rivalidad al decaer el clásico histórico por falta de enfrentamientos en forma regular (lo cual suele suceder cuando ambos clubes se encuentran muchos años en divisiones diferentes), llegando, con el paso de los años, a ser más fuerte que éste.[61] Además, cualquiera de los partidos disputados entre los denominados cinco grandes también son considerados clásicos pero, con excepción del superclásico y el clásico de Avellaneda (rivalidades originadas antes de que los clubes protagonistas fuesen considerados grandes), históricamente no se han considerado mutuamente como máximos rivales en ninguno de los casos. Cabe destacar que, aún en los clásicos históricos, en la mayoría de los casos las rivalidades no surgieron de forma inmediata sino paulatina, forjándose con el pasar de los enfrentamientos, y que las localidades son citadas en base al lugar donde los clubes poseen actualmente su estadio de fútbol o sede social (en caso de no poseer estadio) ya que, en varios casos, en el pasado los clubes poseían dichas instalaciones en otras localidades. Asimismo, solo se toma la fecha del primer partido oficial entre ambos clubes (es decir que no se tienen en cuenta los partidos amistosos).
-    </p>
-    <h3>
-        Alguno de los mas importante:
-    </h3>
-    <p>
-        El Clasico de Avellaneda (entre Racing e Independiente).
-        El Clasico Rosarino (entre Rosario Central y Newell's).
-        El Clasico Cordobes (entre Belgrano y Talleres).
-        El Clasico Santafesino (entre Colon y Unioin).
-        El Superclasico del Futbol Argentino (entre River Plate y Boca Juniors).
-    </p>
-    </main>
-    <footer>
-    <h2 id="r">
-        Referencias
-    </h2>
-    <ul>
-        <li><a href="https://es.wikipedia.org/wiki/Fútbol_en_Argentina#">Wiki AFA</a></li>
-        <li><a href="wikiClub.html">River Plate</a></li>
-        <li><a href="messi.html">Lionel Messi</a></li>
-    </ul>
-    </footer>
-</div>
+                    Durante años se han realizado diferentes encuestas para determinar qué cantidad estimada de simpatizantes poseen los clubes del fútbol argentino. Si bien los datos no son definitivos, y suelen arrojar diversos matices, muestran una considerable ventaja de los denominados Cinco grandes y de los clubes rosarinos por sobre el resto.
+                    La hinchada mas popular del pais la tiene el Club Atletico River Plate, gracias a su pasion y al estadio de gran capacidad que posee.
+                </p>
+            </section>
+            <section>
+                <h2 id="c">
+                    Clasicos
+                </h2>
+                <p>
+                    En el fútbol argentino hay muchos clásicos y partidos de gran rivalidad, los cuales se pueden dividir en clásicos «históricos» y clásicos «modernos». Se consideran modernos a los clásicos en los que los equipos comenzaron a rivalizar cuando al menos uno de ellos ya rivalizaba anteriormente con otro club con el cual se consideraban mutuamente máximos rivales, por lo que es su clásico original (histórico). En algunos casos toma fuerza la nueva rivalidad al decaer el clásico histórico por falta de enfrentamientos en forma regular (lo cual suele suceder cuando ambos clubes se encuentran muchos años en divisiones diferentes), llegando, con el paso de los años, a ser más fuerte que éste. Además, cualquiera de los partidos disputados entre los denominados cinco grandes también son considerados clásicos pero, con excepción del superclásico y el clásico de Avellaneda (rivalidades originadas antes de que los clubes protagonistas fuesen considerados grandes), históricamente no se han considerado mutuamente como máximos rivales en ninguno de los casos. Cabe destacar que, aún en los clásicos históricos, en la mayoría de los casos las rivalidades no surgieron de forma inmediata sino paulatina, forjándose con el pasar de los enfrentamientos, y que las localidades son citadas en base al lugar donde los clubes poseen actualmente su estadio de fútbol o sede social (en caso de no poseer estadio) ya que, en varios casos, en el pasado los clubes poseían dichas instalaciones en otras localidades. Asimismo, solo se toma la fecha del primer partido oficial entre ambos clubes (es decir que no se tienen en cuenta los partidos amistosos).
+                </p>
+                <h3>
+                    Algunos de los mas importantes:
+                </h3>
+                <ul>
+                    <li>
+                        El Clasico de Avellaneda (entre Racing e Independiente).
+                    </li>
+                    <li>
+                        El Clasico Rosarino (entre Rosario Central y Newell's).
+                    </li>
+                    <li>
+                        El Clasico Cordobes (entre Belgrano y Talleres).
+                    </li>
+                    <li>
+                        El Clasico Santafesino (entre Colon y Union).
+                    </li>
+                    <li>
+                        El Superclasico del Futbol Argentino (entre River Plate y Boca Juniors).
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="discusion">
+                    Discusión
+                </h2>
+                <form id="formularioComentario">
+                    <label for="campoNombre">Nombre:</label>
+                    <input type="text" id="campoNombre" name="nombre" placeholder="Tu nombre">
+                    <label for="campoComentario">Comentario:</label>
+                    <textarea id="campoComentario" name="comentario" rows="4" placeholder="Escribí tu comentario (entre 10 y 200 caracteres)"></textarea>
+                    <span id="contadorCaracteres">0 / 200</span>
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="avisoFormulario"></p>
+                <ul id="listaComentarios"></ul>
+            </section>
+        </main>
+        <footer>
+            <h2 id="r">
+                Referencias
+            </h2>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Fútbol_en_Argentina#">Wiki AFA</a></li>
+                <li><a href="wikiClub.html">River Plate</a></li>
+                <li><a href="messi.html">Lionel Messi</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
+</html>
