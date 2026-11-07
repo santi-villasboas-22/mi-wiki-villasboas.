@@ -62,3 +62,143 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+aside button {
+    padding: 6px 10px;
+    border: 1px solid #acacac;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333333;
+    cursor: pointer;
+}
+
+#botonModo {
+    margin-bottom: 12px;
+}
+
+#tamanoTexto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.boton-tamano.activo {
+    background-color: #145374;
+    border-color: #145374;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.texto-pequeno {
+    font-size: 0.85rem;
+}
+
+.texto-grande {
+    font-size: 1.3rem;
+}
+
+.modo-oscuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.modo-oscuro aside,
+.modo-oscuro main {
+    background-color: #1e1e1e;
+}
+
+.modo-oscuro main h2,
+.modo-oscuro main h1,
+.modo-oscuro aside h2 {
+    border-bottom-color: #555555;
+}
+
+.modo-oscuro a {
+    color: #8ab4f8;
+}
+
+.modo-oscuro a:visited {
+    color: #c6a0f6;
+}
+
+.modo-oscuro aside button {
+    background-color: #2c2c2c;
+    border-color: #555555;
+    color: #e0e0e0;
+}
+
+.modo-oscuro .boton-tamano.activo {
+    background-color: #8ab4f8;
+    border-color: #8ab4f8;
+    color: #121212;
+}
+
+.modo-oscuro input,
+.modo-oscuro textarea {
+    background-color: #2c2c2c;
+    border: 1px solid #555555;
+    color: #e0e0e0;
+}
+
+main h2 {
+    cursor: pointer;
+}
+
+main h2::before {
+    content: "▾ ";
+}
+
+section.plegada h2::before {
+    content: "▸ ";
+}
+
+section.plegada > :not(h2) {
+    display: none;
+}
+
+#formularioComentario label,
+#formularioComentario input,
+#formularioComentario textarea,
+#contadorCaracteres {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+#formularioComentario button,
+#listaComentarios button {
+    padding: 6px 10px;
+    border: 1px solid #acacac;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333333;
+    cursor: pointer;
+}
+
+#formularioComentario .campo-error {
+    border: 2px solid #d93025;
+}
+
+#avisoFormulario {
+    color: #d93025;
+}
+
+#listaComentarios li {
+    margin-bottom: 12px;
+}
+
+.modo-oscuro #formularioComentario button,
+.modo-oscuro #listaComentarios button {
+    background-color: #2c2c2c;
+    border-color: #555555;
+    color: #e0e0e0;
+}
+
+.modo-oscuro #formularioComentario .campo-error {
+    border-color: #ff6b6b;
+}
+
+.modo-oscuro #avisoFormulario {
+    color: #ff6b6b;
+}
