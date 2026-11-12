@@ -42,13 +42,14 @@ botonPequeno.addEventListener("click", () => elegirTamano(botonPequeno, "texto-p
 botonEstandar.addEventListener("click", () => elegirTamano(botonEstandar, null));
 botonGrande.addEventListener("click", () => elegirTamano(botonGrande, "texto-grande"));
 
-// Secciones plegables y discusión
+// Secciones plegables
 titulosSecciones.forEach((titulo) => {
     titulo.addEventListener("click", () => {
         titulo.closest("section").classList.toggle("plegada");
     });
 });
 
+// Discusión
 const formularioComentario = document.querySelector("#formularioComentario");
 const campoNombre = document.querySelector("#campoNombre");
 const campoComentario = document.querySelector("#campoComentario");

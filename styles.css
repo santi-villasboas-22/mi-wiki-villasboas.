@@ -63,6 +63,9 @@ img {
     height: auto;
 }
 
+/* ===== Panel Apariencia ===== */
+
+/* Botones del panel */
 aside button {
     padding: 6px 10px;
     border: 1px solid #acacac;
@@ -82,6 +85,7 @@ aside button {
     gap: 6px;
 }
 
+/* Botón de tamaño elegido */
 .boton-tamano.activo {
     background-color: #145374;
     border-color: #145374;
@@ -89,6 +93,7 @@ aside button {
     font-weight: bold;
 }
 
+/* Tamaño del texto del artículo (se aplica sobre el main; Estándar no necesita clase) */
 .texto-pequeno {
     font-size: 0.85rem;
 }
@@ -97,6 +102,7 @@ aside button {
     font-size: 1.3rem;
 }
 
+/* Modo oscuro (la clase se pone en el body) */
 .modo-oscuro {
     background-color: #121212;
     color: #e0e0e0;
@@ -182,6 +188,10 @@ section.plegada > :not(h2) {
 
 #avisoFormulario {
     color: #d93025;
+}
+
+#listaComentarios {
+    list-style: none;
 }
 
 #listaComentarios li {
